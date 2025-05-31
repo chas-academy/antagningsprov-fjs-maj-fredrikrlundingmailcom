@@ -8,7 +8,26 @@ function uppg9 (){
 
     // anropa funktionen och skicka med en array som argument
 
+    const numbers = [2, 4, 7, 9, 6]
   
+    function Sort(numbers)
+    {
+        for (const number of numbers)
+        {
+            if (number % 2 === 0)
+            {
+                console.log(number, "jämt")
+            }
+            else
+            {
+                console.log(number, "udda")
+            }
+        }
+    }
+
+    Sort(numbers)
 }
+
+uppg9()
 
 module.exports = { uppg9 };
